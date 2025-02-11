@@ -1,0 +1,16 @@
+{% extends 'movies/_base.html' %}
+
+<html>
+  <body>
+    {% block content %}
+    <h1>
+      About Our App
+    </h1>
+    <p>
+      Welcome to <b>Movies App</b>, your ultimate destination for discovering and exploring movies like never before. Whether you're a casual viewer or a passionate cinephile, our app provides you with everything you need—from the latest blockbusters to timeless classics.
+    </p>
+    {% load static %}
+      <img style="width:300px" src="{% static 'movies/movies.jpg' %}" alt="About Movie App Picture">
+    {% endblock %}
+  </body>
+</html>
